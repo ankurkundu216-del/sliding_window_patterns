@@ -5,7 +5,7 @@ using namespace std;
 
 int solveFixedWindow(const vector<int>& nums, int k){
     int n=nums.size();
-    if(n < k) return -1;  // edge case: if array smaller than window
+    if(n < k) return -1;
 
     int current_window_sum=0;
     // Step 1: Pehli window (0 se k-1 taak) initialize karo
