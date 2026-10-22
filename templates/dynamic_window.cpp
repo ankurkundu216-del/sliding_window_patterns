@@ -17,5 +17,5 @@ int solveDynamicWindow(const vector<int>& nums, int target) {
         }
         ans = max(ans, right-left+1);
     }
-    return ans
+    return ans;
 }
