@@ -10,7 +10,7 @@ int solveDynamicWindow(const vector<int>& nums, int target) {
 
     int current_window_state=0;
     for(int right=0; right<nums.size(); ++right){
-        current_window_size += nums[right];
+        current_window_state += nums[right];
         while(left<=right && /*condition violated*/) {
             current_window_state -= nums[left];
             left++;
